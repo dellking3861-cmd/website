@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="app-header">
+      <h1>Online Store Dashboard</h1>
+    </header>
+
+    <div class="toolbar">
+      <button id="addProductBtn" class="btn btn-primary">+ Add Product</button>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search products...">
+    </div>
+
+  <div class="card">
+      <table class="products-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="productBody">
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="app-footer">
+      <p>Founder: <strong>SHAZIM</strong></p>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div id="productModal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modalTitle">Add Product</h2>
+      <form id="productForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" id="price" required>
+        </div>
+        <div class="form-group">
+          <label for="stock">Stock</label>
+          <input type="number" id="stock" required>
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input type="text" id="category" required>
+        </div>
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

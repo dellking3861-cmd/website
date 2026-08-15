@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Solutions - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">NovaTech</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="floating-shape floating-shape-1"></div>
+        <div class="floating-shape floating-shape-2"></div>
+        <div class="floating-shape floating-shape-3"></div>
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Showcasing our best work and successful projects.</p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" onclick="filterPortfolio('all')">All</button>
+                <button class="filter-btn" onclick="filterPortfolio('web')">Web</button>
+                <button class="filter-btn" onclick="filterPortfolio('mobile')">Mobile</button>
+                <button class="filter-btn" onclick="filterPortfolio('design')">Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">📸</div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online store with payment integration and inventory management.</p>
+                        <span class="portfolio-tag">Web</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">📱</div>
+                    <div class="portfolio-info">
+                        <h3>Fitness Tracker App</h3>
+                        <p>Cross-platform mobile app for tracking workouts, nutrition, and health goals.</p>
+                        <span class="portfolio-tag">Mobile</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">🎨</div>
+                    <div class="portfolio-info">
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand redesign including logo, color scheme, and visual guidelines.</p>
+                        <span class="portfolio-tag">Design</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">📊</div>
+                    <div class="portfolio-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Real-time data visualization dashboard for business intelligence.</p>
+                        <span class="portfolio-tag">Web</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">🚗</div>
+                    <div class="portfolio-info">
+                        <h3>Ride-Sharing App</h3>
+                        <p>On-demand transportation app with real-time tracking and payments.</p>
+                        <span class="portfolio-tag">Mobile</span>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">🖌️</div>
+                    <div class="portfolio-info">
+                        <h3>Website Redesign</h3>
+                        <p>Modern UI/UX redesign for a major corporate website.</p>
+                        <span class="portfolio-tag">Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"NovaTech transformed our online presence. Our sales have increased by 200% since launching the new website."</p>
+                    <div class="testimonial-author">
+                        <strong>John Smith</strong>
+                        <span>CEO, TechStart Inc.</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The team's attention to detail and technical expertise is outstanding. They delivered our project ahead of schedule."</p>
+                    <div class="testimonial-author">
+                        <strong>Lisa Park</strong>
+                        <span>Founder, GreenLeaf Co.</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Working with NovaTech was a game-changer. Their mobile app helped us reach a whole new audience."</p>
+                    <div class="testimonial-author">
+                        <strong>David Kim</strong>
+                        <span>CTO, CloudBase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 NovaTech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
